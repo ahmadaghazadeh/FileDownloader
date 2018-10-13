@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+  
+
+ 
+ 
+<div class="col-md-12">
+    @using(Html.BeginForm("DownloadFile", "Home", FormMethod.Post  ))
+    {
+
+        <div class="form-group">
+            <label for="URl">Url</label>
+            <input type="text" class="form-control" name="url" id="url" aria-describedby="emailHelp" placeholder="Enter Url">
+            <small id="emailHelp" class="form-text text-muted">Enter your url for download</small>
+        </div>
+        <div class="form-group">
+            <label for="fileName">fileName</label>
+            <input type="text" class="form-control" name="fileName" id="fileName" aria-describedby="emailHelp" placeholder="Enter fileName">
+            <small id="emailHelp" class="form-text text-muted">Enter Filename</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+       
+
+    }
+</div>
+    
+
+    
+    
+ 
+ 
