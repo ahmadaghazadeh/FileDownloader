@@ -48,7 +48,7 @@ namespace FileDownloader.Controllers
                 );
             }
 
-            return Content($"<a href='{downloadPath}'>fileName</a>");
+            return Content($"<a href='{downloadPath}'>{fileName}</a>");
         }
  
     }
